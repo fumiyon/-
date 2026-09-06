@@ -177,6 +177,30 @@ img{ width:100%; display:block; }
   max-width:30em;
 }
 
+.tiers{
+  grid-column: 1 / -1;
+  margin-top:1.2rem;
+  border-top:1px solid rgba(201,162,75,0.18);
+}
+.tier{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  padding:0.9rem 0;
+  border-bottom:1px solid rgba(201,162,75,0.18);
+}
+.tier-name{
+  font-family:'Cormorant Garamond', serif;
+  font-style:italic;
+  font-size:1.05rem;
+  color:var(--paper);
+}
+.tier-price{
+  font-family:'Cormorant Garamond', serif;
+  font-size:1.35rem;
+  color:var(--gold);
+}
+
 /* ---------- APPLY ---------- */
 .apply{ padding: 3.2rem 8vw 4.4rem; }
 .apply-label{
@@ -282,14 +306,21 @@ footer .fname{
 
     <div class="item">
       <p class="item-name">協賛タワー</p>
-      <p class="item-price">¥65,000<small>/ 1口</small></p>
       <p class="item-desc">フロアの主役になる、大型シャンパンタワー。10/6・10/7の2日間、会場に設置します。</p>
-    </div>
-
-    <div class="item">
-      <p class="item-name">協賛花</p>
-      <p class="item-price">¥16,500<small>/ 1口</small></p>
-      <p class="item-desc">イベント当日の祝花として、会場装飾やフラワー演出に使用します。</p>
+      <div class="tiers">
+        <div class="tier">
+          <span class="tier-name">Silver</span>
+          <span class="tier-price">¥50,000</span>
+        </div>
+        <div class="tier">
+          <span class="tier-name">Gold</span>
+          <span class="tier-price">¥100,000</span>
+        </div>
+        <div class="tier">
+          <span class="tier-name">Platinum</span>
+          <span class="tier-price">¥150,000</span>
+        </div>
+      </div>
     </div>
   </section>
 
